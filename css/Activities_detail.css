@@ -1,0 +1,48 @@
+/* 公共属性 */
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clearfix:after{
+    clear:both;
+    display:block;
+    content: "";
+}
+
+.head{
+    height:175px;
+}
+.nav{
+	height: 175px;
+	background-color: rgba(30, 118, 155, 0.7);
+}
+.nav .logo{
+    height:160px;
+    width:160px;
+    margin: 19px 0px 4px 14px;
+    padding: 0;
+}
+
+.nav .name{
+    height: 82px;
+    width: 272px;
+    margin: 50px 0px 44px 7px;
+    color: white;
+    font-size: 21px;
+	line-height: 150%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.nav .index{
+    height: 175px;
+    width:272px;
+    color: white;
+    font-size: 23px;
+	line-height: 175px;
+	text-align: center;
+	font-weight: bold;
+}
+
