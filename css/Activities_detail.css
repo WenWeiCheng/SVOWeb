@@ -46,3 +46,62 @@
 	font-weight: bold;
 }
 
+.main{
+    height: 508px;
+}
+
+.footer{
+    border-top: 1px solid rgba(30, 118, 155, 0.7);
+    position: relative;
+    height: 215px;
+    background-color: rgba(30, 118, 155, 0.7);
+}
+
+.footer .logo_name{
+    width: 394px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 40px;
+}
+
+.footer .logo_name .logo{
+    width: 111px;
+    height:111px;
+}
+.footer .logo_name .name{
+    width: 271px;
+	height: 81px;
+	color: rgba(255, 255, 255, 1);
+    padding-top: 25px;
+    padding-left: 5px;
+	font-size: 21px;
+	line-height: 150%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.QRCode{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    right: 55px;
+    top:28px;
+    text-align: center;
+    line-height: 140px;
+    border: 2px solid blue;
+}
+
+.contact{
+    margin:13px 57px 36px;
+    width: 852px;
+    color: rgba(255, 255, 255, 1);
+	font-size: 11px;
+	line-height: 150%;
+	text-align: left;
+	font-weight: bold;
+}
+
+.contact span{
+    display: inline-block;
+    width: 284px;
+}
