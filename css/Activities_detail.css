@@ -105,3 +105,16 @@
     display: inline-block;
     width: 284px;
 }
+
+.main .title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    width: 153px;
+    height: 57px;
+    color: rgba(76, 78, 74, 1);
+	font-size: 38px;
+	line-height: 150%;
+	text-align: left;
+	font-weight: bold;
+}
