@@ -1,0 +1,161 @@
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clearfix:after{
+    clear:both;
+    display:block;
+    content: "";
+}
+
+.head{
+    height:175px;
+}
+.nav{
+	height: 175px;
+	background-color: rgba(30, 118, 155, 0.7);
+}
+.nav .logo{
+    height:160px;
+    width:160px;
+    margin: 19px 0px 4px 14px;
+    padding: 0;
+}
+
+.nav .name{
+    height: 82px;
+    width: 272px;
+    margin: 50px 0px 44px 7px;
+    color: white;
+    font-size: 21px;
+	line-height: 150%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.nav .index{
+    height: 175px;
+    width:272px;
+    color: white;
+    font-size: 23px;
+	line-height: 175px;
+	text-align: center;
+	font-weight: bold;
+}
+.svo{
+	width: 210px;
+	height: 210px;
+	margin-left: 18px;
+	margin-top: 20px;
+}
+.svo img{
+	width: 210px;
+	height: 297px;
+	margin-top: -43px;
+}
+.slogan{
+    width: 835px;
+	height: 300px;
+	margin-left: 453px;
+	margin-top: 50px;
+	color: rgba(179, 205, 110, 1);
+	font-size: 90px;
+	line-height: 50%;
+	text-align:left;
+	font-weight: bold;
+}
+.box_1{
+	width: 888px;
+	height: 6px;
+	margin-left: 325px;
+	margin-top: 150px;
+	color: rgba(80, 80, 80, 1);
+	background-color: rgba(184, 202, 146, 0.5071428571428571);
+	font-size: 14px;
+	line-height: 150%;
+	text-align: center;
+}/*横向分隔条*/
+.text_1{
+	width: 415px;
+	height: 288px;
+	margin-left: 323px;
+	margin-top: 30px;
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(255, 255, 255, 1);
+	font-size: 14px;
+	line-height: 150%;
+	border: rgba(0, 0, 0, 1) solid 1px;
+	text-align: center;
+}/*文字介绍框*/
+.box_2{
+	width: 310px;
+	height: 2px;
+	margin-left: 614px;
+	margin-top: -143px;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	color: rgba(80, 80, 80, 1);
+	background-color: rgba(229, 229, 229, 1);
+	font-size: 14px;
+	line-height: 100%;
+	text-align: center;
+}/*纵向分隔条*/
+.p img{
+	width: 423px;
+	height: 288px;
+	margin-left: 795px;
+	margin-top: -149px;
+}/*图片*/
+.footer{
+    border-top: 1px solid rgba(30, 118, 155, 0.7);
+    position: relative;
+    height: 215px;
+    background-color: rgba(30, 118, 155, 0.7);
+	margin-top: 250px;
+}
+
+.footer .logo_name{
+    width: 394px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 40px;
+}
+
+.footer .logo_name .logo{
+    width: 111px;
+    height:111px;
+}
+.footer .logo_name .name{
+    width: 271px;
+	height: 81px;
+	color: rgba(255, 255, 255, 1);
+    padding-top: 25px;
+    padding-left: 5px;
+	font-size: 21px;
+	line-height: 150%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.QRCode{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    right: 55px;
+    top:28px;
+    text-align: center;
+    line-height: 140px;
+    border: 2px solid blue;
+}
+
+.contact{
+    margin:13px 57px 36px;
+    width: 852px;
+    color: rgba(255, 255, 255, 1);
+	font-size: 11px;
+	line-height: 150%;
+	text-align: left;
+	font-weight: bold;
+}
