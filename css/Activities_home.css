@@ -1,0 +1,63 @@
+.calendar .title{
+    width: 198px;
+	height: 74px;
+    margin-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(55, 68, 74, 0.85);
+	font-size: 38px;
+	line-height: 150%;
+	text-align: center;
+	font-weight: bold;
+}
+.page{
+    height: 445px;
+}
+
+.cardbox{
+    display: grid;
+    margin-bottom: 25px;
+    grid-template-columns: 240px 240px 240px;
+    grid-template-rows: 413px;
+    grid-row-gap: 79px;
+    grid-column-gap: 105px;
+    justify-content: center;
+
+}
+
+.cardbox .card{
+    position: relative;
+    height: 413px;
+    width: 240px;
+    border: rgba(166, 166, 166, 1) solid 1px;
+    background-color: white;
+}
+
+.card .pic{
+    height: 215px;
+    width: 100%;
+    background-color: skyblue;
+}
+.card .detail{
+    padding: 44px 15px 20px;
+    color: rgba(80, 80, 80, 1);
+	font-size: 11px;
+	line-height: 150%;
+	text-align: left;
+}
+
+.card .date{
+    position: absolute;
+    left:6px;
+    top:184px;
+    width: 45px;
+    height: 63px;
+    color: white;
+    font-size: 15px;
+	line-height: 32px;
+	text-align: center;
+	font-weight: bold;
+    background-color: rgba(56, 56, 56, 1);
+}
+
+
