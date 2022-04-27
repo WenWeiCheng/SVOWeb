@@ -19,7 +19,6 @@
 	background-color: rgba(30, 118, 155, 0.7);
 }
 .nav .logo{
-    height:160px;
     width:160px;
     margin: 19px 0px 4px 14px;
     padding: 0;
@@ -99,4 +98,9 @@
 	line-height: 150%;
 	text-align: left;
 	font-weight: bold;
+}
+
+.contact span{
+    display: inline-block;
+    width: 284px;
 }

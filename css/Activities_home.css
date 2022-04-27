@@ -10,11 +10,9 @@
 	text-align: center;
 	font-weight: bold;
 }
-.page{
-    height: 445px;
-}
 
-.cardbox{
+
+.calendar .cardbox{
     display: grid;
     margin-bottom: 25px;
     grid-template-columns: 240px 240px 240px;
@@ -25,7 +23,7 @@
 
 }
 
-.cardbox .card{
+.calendar .cardbox .card{
     position: relative;
     height: 413px;
     width: 240px;
@@ -33,12 +31,12 @@
     background-color: white;
 }
 
-.card .pic{
+.calendar .cardbox .card .pic{
     height: 215px;
     width: 100%;
     background-color: skyblue;
 }
-.card .detail{
+.calendar .cardbox .card .detail{
     padding: 44px 15px 20px;
     color: rgba(80, 80, 80, 1);
 	font-size: 11px;
@@ -46,7 +44,7 @@
 	text-align: left;
 }
 
-.card .date{
+.calendar .cardbox .card .date{
     position: absolute;
     left:6px;
     top:184px;
@@ -60,4 +58,86 @@
     background-color: rgba(56, 56, 56, 1);
 }
 
+.calendar .more{
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 433px;
+	height: 55px;
+	left: 614px;
+	top: 480px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(30, 118, 155, 0.85);
+	box-shadow: rgba(204, 204, 204, 1) solid 1px;
+	font-size: 21px;
+	line-height: 55px;
+	text-align: center;
+}
 
+.review .title{
+    width: 298px;
+	height: 74px;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+	color: rgba(55, 68, 74, 0.85);
+	font-size: 38px;
+	line-height: 74px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.review .cardbox{
+    display: grid;
+    margin-bottom: 25px;
+    grid-template-columns: 240px 240px 240px;
+    grid-template-rows: 291px;
+    grid-row-gap: 79px;
+    grid-column-gap: 105px;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.review .cardbox .card{
+    position: relative;
+    height: 291px;
+    width: 240px;
+    background-color: white;
+    border: rgba(166, 166, 166, 1) solid 1px;
+}
+
+.review .cardbox .card .pic{
+    height: 244px;
+    background-color: skyblue;
+}
+
+.review .cardbox .card .name{
+    position: absolute;
+    width: 119px;
+	height: 30px;
+    color: rgba(80, 80, 80, 1);
+	font-size: 15px;
+	line-height: 150%;
+	text-align: left;
+	font-weight: bold;
+    top: 198px;
+    left: 56px;
+}
+
+
+.review .more{
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 57px;
+    width: 433px;
+	height: 55px;
+	left: 614px;
+	top: 480px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(30, 118, 155, 0.85);
+	box-shadow: rgba(204, 204, 204, 1) solid 1px;
+	font-size: 21px;
+	line-height: 55px;
+	text-align: center;
+}
