@@ -1,3 +1,4 @@
+/* 近期活动 */
 .calendar .title{
     width: 198px;
 	height: 74px;
@@ -84,6 +85,7 @@
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5),-1px 0px 1px rgba(0, 0, 0, 0.5);
 }
 
+/* 活动回顾 */
 .review .title{
     width: 298px;
 	height: 74px;

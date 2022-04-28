@@ -17,6 +17,7 @@
     height: 175px;
 }
 
+/* 页眉信息栏 */
 .nav {
     height: 175px;
     background-color: rgba(30, 118, 155, 0.7);
@@ -58,6 +59,7 @@
     height: 508px;
 } */
 
+/* 页尾信息栏 */
 .footer {
     border-top: 1px solid rgba(30, 118, 155, 0.7);
     position: relative;
@@ -118,7 +120,7 @@
     width: 100px;
 }
 
-
+/* 导航栏的动画设置 */
 @keyframes index_animation {
     0% {
         background-color: rgba(66,161,186);
