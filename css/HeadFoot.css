@@ -91,8 +91,7 @@
 }
 
 .contact{
-    margin:13px 57px 36px;
-    width: 852px;
+    margin:13px 0px 36px 57px;
     color: rgba(255, 255, 255, 1);
 	font-size: 11px;
 	line-height: 150%;
@@ -102,5 +101,9 @@
 
 .contact span{
     display: inline-block;
-    width: 284px;
+    width: 276px;
+}
+
+.contact span:nth-of-type(4){
+    width:100px;
 }
