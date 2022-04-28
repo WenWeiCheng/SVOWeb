@@ -1,7 +1,7 @@
 .calendar .title{
     width: 198px;
 	height: 74px;
-    margin-top:100px;
+    margin-top:80px;
     margin-left: auto;
     margin-right: auto;
     color: rgba(55, 68, 74, 0.85);
@@ -29,6 +29,10 @@
     width: 240px;
     border: rgba(166, 166, 166, 1) solid 1px;
     background-color: white;
+}
+
+.card:hover{
+    box-shadow: 0.5px 8px 6px rgba(0, 0, 0, 0.3), -0.5px 0px 6px rgba(0, 0, 0, 0.3);
 }
 
 .calendar .cardbox .card .pic{
@@ -60,6 +64,7 @@
 
 .calendar .more{
     margin-top: 33px;
+    margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
     width: 433px;
@@ -68,10 +73,15 @@
 	top: 480px;
 	color: rgba(255, 255, 255, 1);
 	background-color: rgba(30, 118, 155, 0.85);
-	box-shadow: rgba(204, 204, 204, 1) solid 1px;
 	font-size: 21px;
 	line-height: 55px;
 	text-align: center;
+}
+
+.calendar .more:hover{
+    border-bottom: 1px solid skyblue;
+    height: 54px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5),-1px 0px 1px rgba(0, 0, 0, 0.5);
 }
 
 .review .title{
@@ -141,3 +151,12 @@
 	line-height: 55px;
 	text-align: center;
 }
+
+.review .more:hover{
+    border-bottom: 1px solid skyblue;
+    height: 54px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5),-1px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+
