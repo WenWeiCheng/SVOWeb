@@ -26,9 +26,9 @@
 .nav .name{
     height: 82px;
     width: 272px;
-    margin: 25px 0px 44px 7px;
+    margin: 25px 0px 44px 80px;
     color: white;
-    font-size: 21px;
+    font-size: 23px;
 	line-height: 150%;
 	text-align: center;
 	font-weight: bold;
@@ -42,8 +42,9 @@
 	line-height: 175px;
 	text-align: center;
 	font-weight: bold;
+	margin-left: 40px;
 }
-.svo{
+.svo{/*大创logo*/
 	width: 210px;
 	height: 210px;
 	margin-left: 18px;
@@ -54,7 +55,7 @@
 	height: 297px;
 	margin-top: -43px;
 }
-.slogan{
+.slogan{/*大创slogan*/
     width: 835px;
 	height: 300px;
 	margin-left: 453px;
@@ -65,7 +66,7 @@
 	text-align:left;
 	font-weight: bold;
 }
-.box_1{
+.box_1{/*横向分隔条*/
 	width: 888px;
 	height: 6px;
 	margin-left: 325px;
@@ -75,8 +76,8 @@
 	font-size: 14px;
 	line-height: 150%;
 	text-align: center;
-}/*横向分隔条*/
-.text_1{
+}
+.text_1{/*文字介绍框*/
 	width: 415px;
 	height: 288px;
 	margin-left: 323px;
@@ -87,8 +88,8 @@
 	line-height: 150%;
 	border: rgba(0, 0, 0, 1) solid 1px;
 	text-align: center;
-}/*文字介绍框*/
-.box_2{
+}
+.box_2{/*纵向分隔条*/
 	width: 310px;
 	height: 2px;
 	margin-left: 614px;
@@ -100,13 +101,13 @@
 	font-size: 14px;
 	line-height: 100%;
 	text-align: center;
-}/*纵向分隔条*/
-.p img{
+}
+.p img{/*待载入图片*/
 	width: 423px;
 	height: 288px;
 	margin-left: 795px;
 	margin-top: -149px;
-}/*图片*/
+}
 .footer{
     border-top: 1px solid rgba(30, 118, 155, 0.7);
     position: relative;
@@ -130,7 +131,7 @@
     width: 271px;
 	height: 81px;
 	color: rgba(255, 255, 255, 1);
-    padding-top: 0px;
+    padding-top: -10px;
     padding-left: 5px;
 	font-size: 21px;
 	line-height: 150%;
@@ -149,9 +150,9 @@
     border: 2px solid blue;
 }
 
-.contact{
+.contact{/*大创联系方式*/
     margin:13px 57px 36px;
-    width: 852px;
+    width: 1200px;
     color: rgba(255, 255, 255, 1);
 	font-size: 11px;
 	line-height: 150%;
@@ -160,5 +161,32 @@
 }
 .contact span{
     display: inline-block;
-    width: 212px;
+    width: 340px;
+}
+.contact span:nth-of-type(4) {
+    width: 100px;
+}
+/* 导航栏的动画设置 */
+@keyframes index_animation {
+    0% {
+        background-color: rgba(66,161,186);
+        border-bottom: 4px solid transparent;
+        font-size: 23px;
+    }
+    /* 33%{
+        background-color:rgb(51,132,153);
+        border-bottom: 4px solid rgb(51,132,153);
+        text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+    } */
+    40%{
+        background-color: rgb(20,121,151);
+        border-bottom: 4px solid rgb(20,121,151);
+        text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+    }
+    100%{
+        background-color: rgb(0,128,162);
+        border-bottom: 4px solid rgb(0,128,162);
+        font-size: 27px;
+        text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.5);
+    }
 }
