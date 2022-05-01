@@ -42,7 +42,11 @@
 	line-height: 175px;
 	text-align: center;
 	font-weight: bold;
-	margin-left: 40px;
+	margin-left: 0px;
+}
+.nav .index:hover{
+    animation: index_animation 1s;
+    animation-fill-mode: forwards;
 }
 .box{/*黑框*/
 	width: 470px;
@@ -57,7 +61,7 @@
 	text-align: center;
 }
 .box1{/*蓝色背景块*/
-	width: 1503px;
+	width: 1519px;
 	height: 405px;
 	margin-left: 0px;
 	margin-top: -1301px;

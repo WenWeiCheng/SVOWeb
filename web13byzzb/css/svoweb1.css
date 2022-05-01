@@ -42,7 +42,11 @@
 	line-height: 175px;
 	text-align: center;
 	font-weight: bold;
-	margin-left: 40px;
+	margin-left: 0px;
+}
+.nav .index:hover{
+    animation: index_animation 1s;
+    animation-fill-mode: forwards;
 }
 .svo{/*大创logo*/
 	width: 210px;
