@@ -1,17 +1,14 @@
-.partone {
-   position: relative;
+.img1 {
+   position: absolute;
+   top:200px;
+   left:400px;
 }
-.parttwo {
-    position: relative;
-
-    left: 4000px;
-    
-    top: 200px;
+.img2 {
+    position: fixed;
+    left: 450px;
+    top: 350px;
 }
-.partthree {
-    position: relative;
-
-    left: 3000px;
-    
-    top: 200px;
+.img3 {
+    position: fixed;
+    left: 400px;
 }
