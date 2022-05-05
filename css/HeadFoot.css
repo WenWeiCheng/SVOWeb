@@ -1,0 +1,146 @@
+/* 公共属性 */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.head {
+    height: 175px;
+}
+
+/* 页眉信息栏 */
+.nav {
+    height: 175px;
+    background-color: rgba(30, 118, 155, 0.7);
+}
+
+.nav .logo {
+    width: 160px;
+    margin: 19px 0px 4px 14px;
+    padding: 0;
+}
+
+.nav .name {
+    height: 82px;
+    width: 272px;
+    margin: 50px 0px 44px 7px;
+    color: white;
+    font-size: 21px;
+    line-height: 150%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav .index {
+    height: 175px;
+    width: 272px;
+    color: white;
+    font-size: 23px;
+    line-height: 175px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav .index:hover{
+    animation: index_animation 1s;
+    animation-fill-mode: forwards;
+}
+
+/* .main{
+    height: 508px;
+} */
+
+/* 页尾信息栏 */
+.footer {
+    border-top: 1px solid rgba(30, 118, 155, 0.7);
+    position: relative;
+    height: 215px;
+    background-color: rgba(30, 118, 155, 0.7);
+}
+
+.footer .logo_name {
+    width: 394px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.footer .logo_name .logo {
+    width: 111px;
+    height: 111px;
+}
+
+.footer .logo_name .name {
+    width: 271px;
+    height: 81px;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 25px;
+    padding-left: 5px;
+    font-size: 21px;
+    line-height: 150%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.QRCode {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    right: 55px;
+    top: 28px;
+    text-align: center;
+    line-height: 140px;
+    border: 2px solid blue;
+}
+
+.contact {
+    margin: 13px 0px 36px 57px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 11px;
+    line-height: 150%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact span {
+    display: inline-block;
+    width: 276px;
+}
+
+.contact span:nth-of-type(4) {
+    width: 100px;
+}
+
+/* 导航栏的动画设置 */
+@keyframes index_animation {
+    0% {
+        background-color: rgba(66,161,186);
+        border-bottom: 4px solid transparent;
+        font-size: 23px;
+    }
+    /* 33%{
+        background-color:rgb(51,132,153);
+        border-bottom: 4px solid rgb(51,132,153);
+        text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+    } */
+    40%{
+        background-color: rgb(20,121,151);
+        border-bottom: 4px solid rgb(20,121,151);
+        text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+    }
+    100%{
+        background-color: rgb(0,128,162);
+        border-bottom: 4px solid rgb(0,128,162);
+        font-size: 27px;
+        text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.5);
+    }
+}

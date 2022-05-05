@@ -1,0 +1,65 @@
+
+/* 标题 */
+.main .title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    width: 153px;
+    height: 57px;
+    color: rgba(76, 78, 74, 1);
+	font-size: 38px;
+	line-height: 150%;
+	text-align: left;
+	font-weight: bold;
+}
+
+/* 设置日历网格 */
+.calendar{
+    display: grid;
+    margin-top: 17px;
+    margin-bottom: 473px;
+    grid-template-columns: 185px 185px 185px;
+    grid-template-rows: 318px 318px 318px;
+    grid-row-gap: 79px;
+    grid-column-gap: 81px;
+    justify-content: center;
+}
+
+/* 卡片样式和卡片里面的图片、日期、介绍信息布局 */
+.calendar .card{
+    position: relative;
+    background-color: white;
+    border: rgba(166, 166, 166, 1) solid 1px;
+}
+
+.card .pic{
+    height: 166px;
+    width: 100%;
+    background-color: skyblue;
+}
+.card .detail{
+    padding: 34px 11px 20px;
+    color: rgba(80, 80, 80, 1);
+	font-size: 11px;
+	line-height: 150%;
+	text-align: left;
+}
+
+.card .date{
+    position: absolute;
+    left:5px;
+    top:141px;
+    width: 34px;
+    height: 49px;
+    color: white;
+    font-size: 15px;
+	line-height: 150%;
+	text-align: center;
+	font-weight: bold;
+    background-color: rgba(56, 56, 56, 1);
+}
+
+/* 卡片css悬浮动画 */
+.card:hover{
+    box-shadow: 0.5px 8px 6px rgba(0, 0, 0, 0.3), -0.5px 0px 6px rgba(0, 0, 0, 0.3);
+}

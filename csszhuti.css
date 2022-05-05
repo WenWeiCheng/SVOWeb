@@ -1,0 +1,17 @@
+.partone {
+   position: relative;
+}
+.parttwo {
+    position: relative;
+
+    left: 4000px;
+    
+    top: 200px;
+}
+.partthree {
+    position: relative;
+
+    left: 3000px;
+    
+    top: 200px;
+}
