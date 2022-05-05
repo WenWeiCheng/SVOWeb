@@ -1,0 +1,201 @@
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clearfix:after{
+    clear:both;
+    display:block;
+    content: "";
+}
+
+.head{
+    height:175px;
+}
+.nav{
+	height: 175px;
+	background-color: rgba(30, 118, 155, 0.7);
+}
+.nav .logo{
+    width:160px;
+    margin: 19px 0px 4px 14px;
+    padding: 0;
+}
+
+.nav .name{
+    height: 82px;
+    width: 272px;
+    margin: 50px 0px 44px 80px;
+    color: white;
+    font-size: 23px;
+	line-height: 150%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.nav .index{
+    height: 175px;
+    width:272px;
+    color: white;
+    font-size: 23px;
+	line-height: 175px;
+	text-align: center;
+	font-weight: bold;
+	margin-left: 0px;
+}
+.nav .index:hover{
+    animation: index_animation 1s;
+    animation-fill-mode: forwards;
+}
+.box{/*中间部分整体*/
+    width:1500px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.svo{/*大创logo*/
+	width: 210px;
+	height: 210px;
+	margin-left: 18px;
+	margin-top: 20px;
+}
+.svo img{
+	width: 210px;
+	height: 297px;
+	margin-top: -43px;
+}
+.slogan{/*大创slogan*/
+    width: 835px;
+	height: 300px;
+	margin-left: 453px;
+	margin-top: 100px;
+	color: rgba(179, 205, 110, 1);
+	font-size: 90px;
+	line-height: 50%;
+	text-align:left;
+	font-weight: bold;
+}
+.box_1{/*横向分隔条*/
+	width: 888px;
+	height: 6px;
+	margin-left: 325px;
+	margin-top: 150px;
+	color: rgba(80, 80, 80, 1);
+	background-color: rgba(184, 202, 146, 0.5071428571428571);
+	font-size: 14px;
+	line-height: 150%;
+	text-align: center;
+}
+.text_1{/*文字介绍框*/
+	width: 415px;
+	height: 288px;
+	margin-left: 323px;
+	margin-top: 30px;
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(255, 255, 255, 1);
+	font-size: 14px;
+	line-height: 150%;
+	border: rgba(0, 0, 0, 1) solid 1px;
+	text-align: center;
+}
+.box_2{/*纵向分隔条*/
+	width: 310px;
+	height: 2px;
+	margin-left: 614px;
+	margin-top: -143px;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	color: rgba(80, 80, 80, 1);
+	background-color: rgba(229, 229, 229, 1);
+	font-size: 14px;
+	line-height: 100%;
+	text-align: center;
+}
+.p img{/*待载入图片*/
+	width: 423px;
+	height: 288px;
+	margin-left: 795px;
+	margin-top: -149px;
+}
+.footer{
+    border-top: 1px solid rgba(30, 118, 155, 0.7);
+    position: relative;
+    height: 215px;
+    background-color: rgba(30, 118, 155, 0.7);
+	margin-top: 250px;
+}
+
+.footer .logo_name{
+    width: 394px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 40px;
+}
+
+.footer .logo_name .logo{
+    width: 111px;
+    height:111px;
+}
+.footer .logo_name .name{
+    width: 271px;
+	height: 81px;
+	color: rgba(255, 255, 255, 1);
+    padding-top: 20px;
+    padding-left: 5px;
+	font-size: 21px;
+	line-height: 150%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.QRCode{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    right: 55px;
+    top:28px;
+    text-align: center;
+    line-height: 140px;
+    border: 2px solid blue;
+}
+
+.contact{/*大创联系方式*/
+    margin:13px 57px 36px;
+    width: 1200px;
+    color: rgba(255, 255, 255, 1);
+	font-size: 11px;
+	line-height: 150%;
+	text-align: left;
+	font-weight: bold;
+}
+.contact span{
+    display: inline-block;
+    width: 340px;
+}
+.contact span:nth-of-type(4) {
+    width: 100px;
+}
+/* 导航栏的动画设置 */
+@keyframes index_animation {
+    0% {
+        background-color: rgba(66,161,186);
+        border-bottom: 4px solid transparent;
+        font-size: 23px;
+    }
+    /* 33%{
+        background-color:rgb(51,132,153);
+        border-bottom: 4px solid rgb(51,132,153);
+        text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+    } */
+    40%{
+        background-color: rgb(20,121,151);
+        border-bottom: 4px solid rgb(20,121,151);
+        text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+    }
+    100%{
+        background-color: rgb(0,128,162);
+        border-bottom: 4px solid rgb(0,128,162);
+        font-size: 27px;
+        text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.5);
+    }
+}
