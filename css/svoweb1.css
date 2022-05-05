@@ -26,7 +26,7 @@
 .nav .name{
     height: 82px;
     width: 272px;
-    margin: 25px 0px 44px 80px;
+    margin: 50px 0px 44px 80px;
     color: white;
     font-size: 23px;
 	line-height: 150%;
@@ -63,7 +63,7 @@
     width: 835px;
 	height: 300px;
 	margin-left: 453px;
-	margin-top: 50px;
+	margin-top: 100px;
 	color: rgba(179, 205, 110, 1);
 	font-size: 90px;
 	line-height: 50%;
@@ -135,7 +135,7 @@
     width: 271px;
 	height: 81px;
 	color: rgba(255, 255, 255, 1);
-    padding-top: -10px;
+    padding-top: 20px;
     padding-left: 5px;
 	font-size: 21px;
 	line-height: 150%;
