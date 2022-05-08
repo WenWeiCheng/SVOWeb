@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,12 @@
     <title>大创官网</title>
     <link href="./css/svoweb3.css" rel="stylesheet" type="text/css" />
     <link href="./css/reset.css" rel="stylesheet" type="text/css" />
+    <!--引用百度地图API-->
+    <script type="text/javascript"
+        src="http://api.map.baidu.com/api?v=2.0&ak=IaaxraY36AyfsmfqzIQ2aYLBQKd6irv2"></script>
+
 </head>
+
 <body>
     <div class="page">
         <div class="head">
@@ -24,38 +30,87 @@
                 <div class="index fr">组织机构</div>
             </div>
         </div>
-    <div class="box"></div>
-    <div class="box1"></div>
-    <div class="text1"><p>活动名字</p></div>
-    <div class="text2"><p>活动举办(参与)方</p></div>
-    <div class="p"><img src="img/p.png"></div>
-    <div class="return"><img src="img/return.svg"></div>
-    <div class="icon1"><img src="img/icon1.svg"></div>
-    <div class="icon2"><img src="img/icon2.svg"></div>
-    <div class="icon3"><img src="img/icon3.svg"></div>
-    <div class="text3">
-        <p>具体时间:</p>
-        <p style="margin-top: 63px;">地点:</p>
-        <p style="margin-top: 50px;">面向人群:</p>
-    </div>
-    <div class="text4"><p>位置</p></div>
-    <div class="text5"><p>活动细节具体介绍</p></div>
-    <div class="location"><img src="img/location.png"></div>
-    <div class="footer clearfix">
-        <div class="logo_name clearfix">
-            <div class="logo fl">
-                <img src="img/logo.png" width="111px" height="111px">
+        <div class="box"></div>
+        <div class="box1"></div>
+        <div class="text1">
+            <p>活动名字</p>
+        </div>
+        <div class="text2">
+            <p>活动举办(参与)方</p>
+        </div>
+        <div class="p"><img src="img/p.png"></div>
+        <div class="return"><img src="img/return.svg"></div>
+        <div class="icon1"><img src="img/icon1.svg"></div>
+        <div class="icon2"><img src="img/icon2.svg"></div>
+        <div class="icon3"><img src="img/icon3.svg"></div>
+        <div class="text3">
+            <p>具体时间:</p>
+            <p style="margin-top: 63px;">地点:</p>
+            <p style="margin-top: 50px;">面向人群:</p>
+        </div>
+        <div class="text4">
+            <p>位置</p>
+        </div>
+        <div class="text5">
+            <p>活动细节具体介绍</p>
+        </div>
+        <!--百度地图容器-->
+        <div style="width:485px;height:214px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+
+        <div class="footer clearfix">
+            <div class="logo_name clearfix">
+                <div class="logo fl">
+                    <img src="img/logo.png" width="111px" height="111px">
+                </div>
+                <div class="name fl">
+                    <p>华中科技大学</p>
+                    <p>大学生创业实践中心</p>
+                </div>
             </div>
-            <div class="name fl">
-                <p>华中科技大学</p>
-                <p>大学生创业实践中心</p>
+            <div class="QRCode">二维码</div>
+            <div class="contact">
+                <span>电话:</span><span>邮箱:</span><span>地址:</span>
             </div>
         </div>
-        <div class="QRCode">二维码</div>
-        <div class="contact">
-            <span>电话:</span><span>邮箱:</span><span>地址:</span>
-        </div>
     </div>
-    </div>
-    </body>
-    </html>
+    <script type="text/javascript">
+        //创建和初始化地图函数：
+        function initMap() {
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addMapOverlay();//向地图添加覆盖物
+        }
+        function createMap() {
+            map = new BMap.Map("map");
+            map.centerAndZoom(new BMap.Point(116.403874, 39.914889), 12);
+        }
+        function setMapEvent() {
+            map.enableScrollWheelZoom();
+            map.enableKeyboard();
+            map.enableDragging();
+            map.enableDoubleClickZoom()
+        }
+        function addClickHandler(target, window) {
+            target.addEventListener("click", function () {
+                target.openInfoWindow(window);
+            });
+        }
+        function addMapOverlay() {
+        }
+        //向地图添加控件
+        function addMapControl() {
+            var scaleControl = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+            scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+            map.addControl(scaleControl);
+            var navControl = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+            map.addControl(navControl);
+            var overviewControl = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: true });
+            map.addControl(overviewControl);
+        }
+        var map;
+        initMap();
+    </script>
+</body>
+
+</html>

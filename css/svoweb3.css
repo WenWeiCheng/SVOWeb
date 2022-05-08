@@ -164,8 +164,8 @@
 	text-align: center;
 	padding-top: 100px;
 }
-.location img{/*位置图*/
-	width: 600px;
+#map{/*地图*/
+	width: 485px;
 	height: 283px;
 	margin-left: 736px;
 	margin-top: 200px;
