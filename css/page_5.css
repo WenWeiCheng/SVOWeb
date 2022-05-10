@@ -1,0 +1,78 @@
+
+
+.rowOne{
+    margin-top: 42px;
+    margin-bottom: 159px;
+    width: 100%;
+    height: 270px;
+    display: grid;
+    grid-template-columns: 187px 187px 187px;
+    grid-template-rows: 270px;
+    grid-column-gap: 76px;
+    justify-content: center;
+}
+
+.rowTwo{
+    margin-top: 42px;
+    margin-bottom: 159px;
+    width: 100%;
+    height: 270px;
+    display: grid;
+    grid-template-columns: 187px 187px;
+    grid-template-rows: 270px;
+    grid-column-gap: 76px;
+    justify-content: center;
+}
+
+.rowThree{
+    margin-top: 42px;
+    margin-bottom: 159px;
+    width: 100%;
+    height: 270px;
+    display: grid;
+    grid-template-columns: 187px 187px 187px;
+    grid-template-rows: 270px;
+    grid-column-gap: 76px;
+    justify-content: center;
+}
+
+.card{
+    width: 187px;
+    height: 270px;
+    background-color: white;
+    border-radius: 34px;
+    box-shadow: 2px 2px 20px 8px rgba(229, 229, 229, 1);
+}
+
+.card .img{
+    width: 144px;
+    height: 144px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card .title{
+    width: 85px;
+	height: 30px;
+	color: rgba(80, 80, 80, 1);
+	font-size: 20px;
+	line-height: 150%;
+	text-align: center;
+	font-weight: bold;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card .intro{
+    width: 32px;
+	height: 24px;
+	color: rgba(80, 80, 80, 1);
+	font-size: 16px;
+	line-height: 150%;
+	text-align: left;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
