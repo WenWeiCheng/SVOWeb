@@ -98,6 +98,10 @@
 	border: rgba(0, 0, 0, 1) solid 1px;
 	text-align: center;
 }
+.text_1:hover{
+    animation: box_animation 0s;
+    animation-fill-mode: forwards;
+}
 .box_2{/*纵向分隔条*/
 	width: 310px;
 	height: 2px;
@@ -116,6 +120,10 @@
 	height: 288px;
 	margin-left: 795px;
 	margin-top: -149px;
+}
+.p img:hover{
+    animation: box_animation 0s;
+    animation-fill-mode: forwards;
 }
 .footer{
     border-top: 1px solid rgba(30, 118, 155, 0.7);
@@ -197,5 +205,14 @@
         border-bottom: 4px solid rgb(0,128,162);
         font-size: 27px;
         text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.5);
+    }
+}
+/*中间方框的动画设置*/
+@keyframes box_animation {
+    0% {
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.3), 0 10px 10px 0 rgba(0, 0, 0, 0.3);
     }
 }
