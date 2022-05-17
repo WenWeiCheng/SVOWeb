@@ -1,50 +1,55 @@
+/* 公共属性 */
+.fl {
+    float: left;
+}
 
-.fl{
-    float:left;
+.fr {
+    float: right;
 }
-.fr{
-    float:right;
-}
-.clearfix:after{
-    clear:both;
-    display:block;
+
+.clearfix:after {
+    clear: both;
+    display: block;
     content: "";
 }
 
-.head{
-    height:175px;
+.head {
+    height: 175px;
 }
-.nav{
-	height: 175px;
-	background-color: rgba(30, 118, 155, 0.7);
+
+/* 页眉信息栏 */
+.nav {
+    height: 175px;
+    background-color: rgba(30, 118, 155, 0.7);
 }
-.nav .logo{
-    width:160px;
+
+.nav .logo {
+    width: 160px;
     margin: 19px 0px 4px 14px;
     padding: 0;
 }
 
-.nav .name{
+.nav .name {
     height: 82px;
     width: 272px;
-    margin: 60px 0px 44px 80px;
+    margin: 50px 0px 44px 7px;
     color: white;
-    font-size: 23px;
-	line-height: 150%;
-	text-align: center;
-	font-weight: bold;
+    font-size: 21px;
+    line-height: 150%;
+    text-align: center;
+    font-weight: bold;
 }
 
-.nav .index{
+.nav .index {
     height: 175px;
-    width:272px;
+    width: 272px;
     color: white;
     font-size: 23px;
-	line-height: 175px;
-	text-align: center;
-	font-weight: bold;
-	margin-left: 0px;
+    line-height: 175px;
+    text-align: center;
+    font-weight: bold;
 }
+
 .nav .index:hover{
     animation: index_animation 1s;
     animation-fill-mode: forwards;
